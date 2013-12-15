@@ -9,18 +9,16 @@
     (print "> ")
     (flush)
     (let [input (read-line)]
-      (if-let [input* (try (read-string input) (catch Exception e (prn 'e e)))]
+      (when-not (clojure.string/blank? input)
         (cond
-          (= 'exit input*) (System/exit 0)
-          (symbol? input*)
+          (= "exit" input) (System/exit 0)
+          (string? input)
           (try
             (leiningen.core.main/apply-task
-              (str input*)
+              input
               (leiningen.core.project/read)
               [])
             (catch clojure.lang.ExceptionInfo e nil)
             (catch Exception e (prn 'oh e)))
-          :else (prn 'omg2))
-
-        (prn 'omg)))
+          :else (prn 'omg2))))
     (recur)))
