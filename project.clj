@@ -1,4 +1,4 @@
-(defproject io.github.ujihisa/lein-interactive "0.1.0"
+(defproject io.github.ujihisa/lein-interactive "0.1.1"
   :description "a leiningen plugin to do tasks interactively"
   :url "http://github.com/ujihisa/lein-interactive"
   :license {:name "GNU GPL v3+"
