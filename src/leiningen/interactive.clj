@@ -18,7 +18,8 @@
               (str input*)
               (leiningen.core.project/read)
               [])
-            (catch clojure.lang.ExceptionInfo e nil))
+            (catch clojure.lang.ExceptionInfo e nil)
+            (catch Exception e (prn 'oh e)))
           :else (prn 'omg2))
 
         (prn 'omg)))
