@@ -14,10 +14,11 @@
           (= "exit" input) (System/exit 0)
           (string? input)
           (try
-            (leiningen.core.main/apply-task
-              input
-              (leiningen.core.project/read)
-              [])
+            (let [[task-name & args] (clojure.string/split input #"\s+")]
+                 (leiningen.core.main/apply-task
+                   task-name
+                   (leiningen.core.project/read)
+                   args))
             (catch clojure.lang.ExceptionInfo e nil)
             (catch Exception e (prn 'oh e)))
           :else (prn 'omg2))))
