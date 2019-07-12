@@ -18,10 +18,6 @@ FIXME: and add an example usage that actually makes sense:
 
     $ lein interactive
 
-## Known issues
-
-* `check` stops the process because leiningen's check.clj has `System/exit` call..
-
 ## License
 
 Copyright (c) 2013-2015 Tatsuhiro Ujihisa
