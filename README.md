@@ -6,21 +6,17 @@ A Leiningen plugin to do many wonderful things.
 
 FIXME: Use this for user-level plugins:
 
-Put `[lein-interactive "1.0.0"]` into the `:plugins` vector of your
+Put `[io.github.ujihisa/lein-interactive "1.0.0"]` into the `:plugins` vector of your
 `:user` profile, or if you are on Leiningen 1.x do `lein plugin install
 lein-interactive 1.0.0`.
 
 FIXME: Use this for project-level plugins:
 
-Put `[lein-interactive "1.0.0"]` into the `:plugins` vector of your project.clj.
+Put `[io.github.ujihisa/lein-interactive "1.0.0"]` into the `:plugins` vector of your project.clj.
 
 FIXME: and add an example usage that actually makes sense:
 
     $ lein interactive
-
-## Known issues
-
-* `check` stops the process because leiningen's check.clj has `System/exit` call..
 
 ## License
 
