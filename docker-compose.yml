@@ -1,0 +1,9 @@
+version: '3'
+services:
+  lein-interactive:
+    container_name: lein-interactive
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
