@@ -23,3 +23,9 @@ FIXME: and add an example usage that actually makes sense:
 Copyright (c) 2013 Tatsuhiro Ujihisa
 
 GPL 3 or any later version with exception clause to allow you to re-distribute with clojure or leiningen (or of course both.)
+
+## Development
+
+Use docker-compose
+
+`docker-compose up --build lein-interactive`
